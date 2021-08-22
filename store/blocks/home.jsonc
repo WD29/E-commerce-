@@ -1,0 +1,178 @@
+{
+  "store.home": { 
+    "blocks": [
+      "tab-layout#home", 
+      "slider-layout#medal",
+      "info-card#button-right",
+      "info-card#button-left"          
+    ]
+  },
+
+ 
+    "info-card#button-right": {
+      "props": {
+        "isFullModeStyle": false,
+        "textPosition": "right",
+        "imageUrl": "https://veja.abril.com.br/wp-content/uploads/2020/06/EaQvroQXYAE2dDC.jpg",
+        "headline": "Playstation 5",
+        "subhead": "Desfrute do carregamento extremamente rápido com o SSD de altíssima velocidade, uma imersão mais profunda com suporte a feedback tátil, gatilhos adaptáveis e áudio 3D, além de uma geração inédita de jogos incríveis para PlayStation®.",
+        "callToActionText": "Compre Agora",
+        "callToActionMode": "link",
+        "callToActionUrl": "/sale/d",
+        "textAlignment": "center",
+        "blockClass": "ps5"
+        
+      }
+    },
+    
+    "info-card#button-left": {
+      "props": {
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://meups.com.br/wp-content/uploads/2020/10/acessorios-do-ps5.jpg",
+      "headline": "Acessórios",
+      "subhead": "Jogue sem limites com a nova geração de acessórios para PlayStation®",
+      "callToActionMode": "link",
+      "callToActionText": "Compre Agora",
+      "textAlignment": "center",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "vintage"
+      }
+    },    
+
+    "slider-layout#medal": {
+      "children": ["info-card#1", "info-card#2"],
+      "props": {
+        "itemsPerPage": {
+          "desktop": 1,
+          "tablet": 1,
+          "phone": 1
+          },
+        "autoplay": {
+          "timeout": 5000,
+          "stopOnHover": false
+        }
+      }
+    },
+    "info-card#1": {
+      "props": {
+        "imageUrl": "https://miro.medium.com/max/1400/1*hqkUyMqlhZPXHQFzaZDZmg.jpeg",
+        "isFullModeStyle": true,
+        "headline": "",
+        "callToActionText": "",
+        "textPosition": "center",
+        "blockClass":"slider1"        
+      }
+    },
+    "info-card#2": {
+      "props": {
+        "imageUrl": "https://observatoriodegames.uol.com.br/wp-content/uploads/2021/04/PS-Store-1024x576.jpg",
+        "isFullModeStyle": true,
+        "headline": "",
+        "callToActionText": "",
+        "textPosition": "center",
+        "blockClass":"slider2"  
+                        
+      }
+    },
+
+    "tab-layout#home": { 
+
+    "children": [
+      "tab-list#home",
+      "tab-content#home"
+    ],
+    "props": {
+      "blockClass": "home",
+      "defaultActiveTabId": "home1"
+    }
+  },
+  "tab-list#home": {
+    "children": [
+      "tab-list.item#home1",
+      "tab-list.item#home2",
+      "tab-list.item#home3"
+    ]
+  },
+  "tab-list.item#home1": {
+    "props": {
+      "tabId": "home1",
+      "label": "NOVIDADES",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#home2": {
+    "props": {
+      "tabId": "home2",
+      "label": "LIQUIDAÇÕES"
+    }
+  },
+  "tab-list.item#home3": {
+    "props": {
+      "tabId": "home3",
+      "label": "GAMES"
+      
+      }
+    },
+ "tab-content#home": {
+  "children": [
+     "tab-content.item#home1",
+     "tab-content.item#home2",
+     "tab-content.item#home3"
+   ]
+ },
+ "tab-content.item#home1": {
+   "children": [
+     "rich-text#1"
+   ],
+   "props": {
+     "tabId": "majorAppliances"
+   }
+ },
+ "tab-content.item#home2": {
+   "children": [
+    "rich-text#2"
+   ],
+   "props": {
+     "tabId": "electronics"
+   }
+ },  
+ "tab-content.item#home3": {
+  "children": [
+   "rich-text#3"
+  ],
+  "props": {
+    "tabId": "electronics3"
+  }
+},  
+
+ "rich-text#1": {
+  "props": {
+    "text": "Texto para Major Appliances",
+    "textPosition": "CENTER",
+    "font": "t-heading-3"
+  }
+},
+"rich-text#2": {
+  "props": {
+    "text": "Texto para Electronics",
+    "textPosition": "CENTER",
+    "font": "t-heading-3"
+  }  
+},
+"rich-text#3": {
+  "props": {
+    "text": "Texto para Electrosnics",
+    "textPosition": "CENTER",
+    "font": "t-heading-3"
+  }
+        
+  }
+  
+
+          
+}
+
+
+
+
